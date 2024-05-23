@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <p></p><span style="display: none;"></span>
+        </div>
+        <h2>Проекції. Опитувальник самооцінки</h2>
+        <div class="question"></div>
+
+
+        <div class="rectangle">
+            <div class="active_btn"></div>
+            <div class="line one" data="1"> <p>Майже ніколи</p></div>
+            <div class="line two" data="2"><p>Іноді</p></div>
+            <div class="line three" data="3"><p>Часто</p></div>
+            <div class="line four" data="4"><p>Майже завжди</p></div>
+        </div>
+
+    </div>
+    <div class="overlay" style="display: none;">
+        <div class="modal">
+            <img src="img/green.png" alt="">
+            <h4></h4>
+            <span class="btn">+</span>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        new Note('.question', '.answer_title span', '.page span', '.line', '.overlay').init();
+    </script>
+</body>
+
+</html>
